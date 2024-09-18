@@ -1,0 +1,73 @@
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+  height: auto !important;
+}
+
+body {
+  padding: 10px;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  max-width: 100%;
+  overflow-x: hidden;
+  background: linear-gradient(
+    to bottom right,
+    #2c2c2c,
+    /* Top-left */ #282828,
+    /* Top-center */ #2b292a,
+    /* Top-right */ #2e2e2e,
+    /* Middle-left */ #2c2c2c,
+    /* Middle-right */ #2e2c2d,
+    /* Bottom-left */ #2d2b2c,
+    /* Bottom-center */ #302e2f /* Bottom-right */
+  );
+}
+
+.header {
+  text-align: center;
+}
+
+.titleText {
+  font-size: 40px;
+  display: inline;
+  margin: 0;
+}
+
+.portolaLogo {
+  height: auto;
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: middle;
+  width: 400px;
+}
+
+/* iPhone SE and smaller devices */
+@media (max-width: 390px) {
+  .titleText {
+    font-size: 40px;
+  }
+  .portolaLogo {
+    width: 200px;
+  }
+}
+
+/* iPhone 8, X, XR, 11 and similar devices */
+@media (max-width: 417px) and (min-width: 391px) {
+  .titleText {
+    font-size: 43px;
+  }
+  .portolaLogo {
+    width: 230px;
+  }
+}
+
+/* iPhone 12, 13, 14, 15 and larger devices */
+@media (max-width: 455px) and (min-width: 418px) {
+  .titleText {
+    font-size: 45px;
+  }
+  .portolaLogo {
+    width: 245px;
+  }
+}
