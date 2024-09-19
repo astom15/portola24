@@ -1,4 +1,4 @@
-import LazyImage from "./LazyImage";
+import StickerGrid from "./ImageGrid";
 import './style.css'
 
 const App: React.FC = () => (
@@ -11,12 +11,7 @@ const App: React.FC = () => (
         alt="portola logo"
       ></img>
     </div>
-    <LazyImage
-      lqip="/images/lqip/andre-lqip.jpg"
-      src="/images/andre.png"
-      alt="andre"
-      href="https://www.instagram.com/dre_yonce/"
-    ></LazyImage>
+    <StickerGrid/>
   </>
 );
 

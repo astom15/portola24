@@ -1,0 +1,35 @@
+.image-grid {
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.image-wrapper {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  position: relative;
+}
+
+.image-wrapper img {
+  width: 100px;
+  height: auto;
+}
+
+/* iPhone SE and smaller devices */
+@media (max-width: 390px) {
+}
+
+/* iPhone 8, X, XR, 11 and similar devices */
+@media (max-width: 417px) and (min-width: 391px) {
+}
+
+/* iPhone 12, 13, 14, 15 and larger devices */
+@media (max-width: 455px) and (min-width: 418px) {
+}

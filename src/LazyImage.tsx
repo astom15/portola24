@@ -1,13 +1,12 @@
 import  { useRef, useState, useEffect } from "react";
-
+import './ImageGridStyle.css'
 interface ImageProps {
   lqip: string;
   src: string;
   alt: string;
-  href: string;
 }
 
-const LazyImage: React.FC<ImageProps> = ({ lqip, src, alt, href }) => {
+const LazyImage: React.FC<ImageProps> = ({ lqip, src, alt }) => {
   const [isVisible, setIsVisible] = useState(false);
   const imageRef = useRef(null);
 
@@ -38,13 +37,6 @@ const LazyImage: React.FC<ImageProps> = ({ lqip, src, alt, href }) => {
   }, []);
 
   return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      style={{ display: "inline-block" }}
-      title="Instagram!"
-    >
       <img
         ref={imageRef}
         src={isVisible ? src : lqip}
@@ -55,7 +47,6 @@ const LazyImage: React.FC<ImageProps> = ({ lqip, src, alt, href }) => {
           display: "block",
         }}
       />
-    </a>
   );
 };
 
