@@ -4,7 +4,7 @@ import './style.css'
 const App: React.FC = () => (
   <>
     <div className="header">
-      <h1 className="titleText">Who The Fuck Did I Meet at</h1>
+      <h1 className="titleText">Who The Fuck Did I Meet At</h1>
       <img 
         className="portolaLogo"
         src="/images/pLogo.png"
