@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Muro";
+  src: url("./assets/fonts/Muro.otf") format(opentype);
+  font-weight: bold;
+  font-style: normal;
+}
+
 html {
   max-width: 100%;
   overflow-x: hidden;
@@ -25,48 +32,59 @@ body {
 }
 
 .header {
-  text-align: center;
   padding-bottom: 15px;
+  text-align: center;
 }
 
 .titleText {
+  font-family: "Muro";
   font-size: 40px;
   display: inline;
   margin: 0;
+  background: linear-gradient(
+    to bottom right,
+    #cac7bb,
+    #cac7b8,
+    #c7c5b8,
+    #cbc9ba,
+    #cccabc,
+    #cbc8bd
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .portolaLogo {
   height: auto;
   display: inline-block;
   margin-left: 5px;
-  vertical-align: middle;
+  vertical-align: bottom;
   width: 400px;
 }
 
-/* iPhone SE and smaller devices */
-@media (max-width: 390px) {
+@media (max-width: 396px) {
   .titleText {
     font-size: 40px;
   }
   .portolaLogo {
-    width: 200px;
+    width: 185px;
   }
 }
 
-/* iPhone 8, X, XR, 11 and similar devices */
-@media (max-width: 417px) and (min-width: 391px) {
+@media (max-width: 427px) and (min-width: 397px) {
   .titleText {
-    font-size: 43px;
+    font-size: 45px;
   }
   .portolaLogo {
     width: 230px;
   }
 }
 
-/* iPhone 12, 13, 14, 15 and larger devices */
-@media (max-width: 455px) and (min-width: 418px) {
+@media (max-width: 455px) and (min-width: 428px) {
   .titleText {
-    font-size: 45px;
+    font-size: 50px;
   }
   .portolaLogo {
     width: 245px;
