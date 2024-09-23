@@ -5,6 +5,7 @@ export const images = [
     src: "/images/andre.png",
     alt: "andre",
     href: "https://www.instagram.com/dre_yonce/",
+    name: "andre",
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ export const images = [
     src: "/images/adrienne.png",
     alt: "adrienne",
     href: "https://www.instagram.com/adrienney/",
+    name: "adrienne",
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ export const images = [
     src: "/images/alex.png",
     alt: "alex",
     href: "https://www.instagram.com/meowchow/",
+    name: "alex",
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ export const images = [
     src: "/images/kyoung.png",
     alt: "kyoung",
     href: "https://www.instagram.com/k_young32/",
+    name: "kyoung",
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ export const images = [
     src: "/images/phil.png",
     alt: "phil",
     href: "https://www.instagram.com/phillybonbilly/",
+    name: "phil",
   },
   {
     id: 6,
@@ -40,6 +45,7 @@ export const images = [
     src: "/images/tran.png",
     alt: "tran",
     href: "https://www.instagram.com/trantnguyen/",
+    name: "tran",
   },
   {
     id: 7,
@@ -47,6 +53,7 @@ export const images = [
     src: "/images/ham.png",
     alt: "hammy",
     href: "https://www.instagram.com/hamptonandeggs/",
+    name: "ham",
   },
   {
     id: 8,
@@ -54,6 +61,7 @@ export const images = [
     src: "/images/peaches.png",
     alt: "peaches",
     href: "https://www.instagram.com/ppeaches_10/",
+    name: 'peaches',
   },
   {
     id: 9,
@@ -61,6 +69,7 @@ export const images = [
     src: "/images/fisher.png",
     alt: "fisher",
     href: "https://www.instagram.com/followthefishtv/",
+    name: 'fisher',
   },
 ];
 

@@ -45,6 +45,7 @@ const LazyImage: React.FC<ImageProps> = ({ lqip, src, alt }) => {
           filter: isVisible ? "none" : "blur(10px)",
           transition: "filter 0.5s ease-in-out",
           display: "block",
+          cursor: "pointer"
         }}
       />
   );

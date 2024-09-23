@@ -6,6 +6,16 @@ import React from "react";
 
 const generateRandomRotation = () => `${Math.random() * 80 - 45}deg`;
 
+const handleImageClick = (imageName: string) => {
+  const gtag = (window as any).gtag as (...args: any[]) => void;
+  gtag('event', 'click', {
+    event_category: 'Image',
+    event_label: imageName,
+    value: 1
+  })
+}
+
+
 const StickerGrid: React.FC = () => {
     const [shuffledImgs, setShuffledImgs] = React.useState(images);
 
@@ -32,6 +42,7 @@ const StickerGrid: React.FC = () => {
               rel="noopener noreferrer"
               style={{ display: "inline-block" }}
               title="Instagram!"
+              onClick= {() => handleImageClick(img.name)}
             >
               <div
                 key={img.id}

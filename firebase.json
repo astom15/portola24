@@ -1,15 +1,38 @@
 {
   "hosting": {
     "public": "dist",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
         "source": "**",
         "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|png|gif|webp)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=15778463"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(js|css|otf)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000"
+          }
+        ]
+      }
+    ],
+    "redirects": [
+      {
+        "source": "https://whotfdidimeetatportola.web.app/",
+        "destination": "https://whotfdidimeetatportola.com",
+        "type": 301
       }
     ]
   }
