@@ -6,7 +6,7 @@ interface ImageProps {
   alt: string;
 }
 
-const LazyImage: React.FC<ImageProps> = ({ lqip, src, alt }) => {
+const LazyImage: React.FC<ImageProps> = ({lqip, src, alt }) => {
   const [isVisible, setIsVisible] = useState(false);
   const imageRef = useRef(null);
 

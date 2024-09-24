@@ -11,7 +11,6 @@ const App: React.FC = () => (
         alt="portola logo"
       ></img>
     </div>
-    <small className="asterisk">Blue = single</small>
     <StickerGrid />
   </>
 );

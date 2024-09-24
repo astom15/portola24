@@ -127,5 +127,28 @@ export const images = [
     href: "https://www.instagram.com/daranylong/",
     name: "darany",
   },
+  {
+    id: 17,
+    lqip: "/images/lqip/sunny-lqip.jpg",
+    src: "/images/sunny.png",
+    alt: "sunny",
+    href: "https://www.instagram.com/unar_yunns?igsh=MTExbHRyemlsOWxycA==",
+    name: "sunny",
+  },
+  {
+    id: 18,
+    lqip: "/images/lqip/jane-lqip.jpg",
+    src: "/images/jane.png",
+    alt: "jane",
+    href: "https://www.instagram.com/jahnelee/",
+    name: "jane",
+  },
+  {
+    id: 19,
+    lqip: "/images/lqip/cooper-lqip.jpg",
+    src: "/images/cooper.png",
+    alt: "cooper",
+    href: "https://www.instagram.com/coopertuch/",
+    name: "cooper",
+  },
 ];
-

@@ -37,15 +37,15 @@ const StickerGrid: React.FC = () => {
           const rotation = generateRandomRotation();
           return (
             <a
+              key={img.id}
               href={img.href}
               target="_blank"
               rel="noopener noreferrer"
               style={{ display: "inline-block" }}
               title="Instagram!"
-              onClick= {() => handleImageClick(img.name)}
+              onClick={() => handleImageClick(img.name)}
             >
               <div
-                key={img.id}
                 className="image-wrapper"
                 style={{ transform: `rotate(${rotation})` }}
               >
