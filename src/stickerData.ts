@@ -185,11 +185,11 @@ export const images = [
   },
   {
     id: 24,
-    lqip: "/images/lqip/jimothy-lqip.jpg",
-    src: "/images/jimothy.png",
-    alt: "jimothy",
+    lqip: "/images/lqip/yungjimmy-lqip.jpg",
+    src: "/images/yungjimmy.png",
+    alt: "yungjimmy",
     href: "https://www.instagram.com/jamesash20/",
-    name: "jimothy",
+    name: "yungjimmy",
   },
   {
     id: 25,
