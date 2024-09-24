@@ -119,5 +119,13 @@ export const images = [
     href: "https://www.instagram.com/chottominute/",
     name: "mimi",
   },
+  {
+    id: 16,
+    lqip: "/images/lqip/darany-lqip.jpg",
+    src: "/images/darany.png",
+    alt: "darany",
+    href: "https://www.instagram.com/daranylong/",
+    name: "darany",
+  },
 ];
 
