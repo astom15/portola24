@@ -239,4 +239,12 @@ export const images = [
     href: "https://www.instagram.com/m_x_a/",
     name: "malia",
   },
+  {
+    id: 31,
+    lqip: "/images/lqip/moodeng-lqip.jpg",
+    src: "/images/moodeng.png",
+    alt: "moodeng",
+    href: "https://www.instagram.com/immoodeng/",
+    name: "moodeng",
+  },
 ];
