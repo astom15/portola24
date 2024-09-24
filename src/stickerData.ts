@@ -215,4 +215,28 @@ export const images = [
     href: "https://www.instagram.com/ty_workout2/",
     name: "tyler",
   },
+  {
+    id: 28,
+    lqip: "/images/lqip/tom-lqip.jpg",
+    src: "/images/tom.png",
+    alt: "tom",
+    href: "https://www.instagram.com/_tompham/",
+    name: "tom",
+  },
+  {
+    id: 29,
+    lqip: "/images/lqip/nish-lqip.jpg",
+    src: "/images/nish.png",
+    alt: "nish",
+    href: "https://www.instagram.com/nishfoswish/",
+    name: "nish",
+  },
+  {
+    id: 30,
+    lqip: "/images/lqip/malia-lqip.jpg",
+    src: "/images/malia.png",
+    alt: "malia",
+    href: "https://www.instagram.com/m_x_a/",
+    name: "malia",
+  },
 ];
