@@ -8,26 +8,7 @@
         "destination": "/index.html"
       }
     ],
-    "headers": [
-      {
-        "source": "**/*.@(jpg|jpeg|png|gif|webp)",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "public, max-age=15778463"
-          }
-        ]
-      },
-      {
-        "source": "**/*.@(js|css|otf)",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "public, max-age=31536000"
-          }
-        ]
-      }
-    ],
+
     "redirects": [
       {
         "source": "https://whotfdidimeetatportola.web.app/",

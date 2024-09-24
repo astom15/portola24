@@ -5,19 +5,13 @@
   font-style: normal;
 }
 
-html {
-  max-width: 100%;
-  overflow-x: hidden;
-  height: auto !important;
-}
-
+html,
 body {
   padding: 10px;
   margin: 0;
-  height: 100vh;
+  overflow-x: hidden;
   display: flex;
   max-width: 100%;
-  overflow-x: hidden;
   background: linear-gradient(
     to bottom right,
     #2c2c2c,
@@ -29,11 +23,12 @@ body {
     /* Bottom-left */ #2d2b2c,
     /* Bottom-center */ #302e2f /* Bottom-right */
   );
+  background-color: #2c2c2c;
 }
 
 .header {
-  padding-bottom: 15px;
   text-align: center;
+  padding-bottom: 5px;
 }
 
 .titleText {
@@ -55,6 +50,14 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+}
+.asterisk {
+  font-family: "Muro";
+  color: #373cb8;
+  font-size: 18px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .portolaLogo {

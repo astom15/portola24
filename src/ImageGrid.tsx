@@ -4,7 +4,7 @@ import { images } from "./stickerData.js";
 import React from "react";
 
 
-const generateRandomRotation = () => `${Math.random() * 80 - 45}deg`;
+const generateRandomRotation = () => `${Math.random() * 70 - 35}deg`;
 
 const handleImageClick = (imageName: string) => {
   const gtag = (window as any).gtag as (...args: any[]) => void;
