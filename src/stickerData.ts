@@ -244,7 +244,7 @@ export const images = [
     lqip: "/images/lqip/moodeng-lqip.jpg",
     src: "/images/moodeng.png",
     alt: "moodeng",
-    href: "https://www.instagram.com/immoodeng/",
+    href: "https://www.instagram.com/khaokheow.zoo/",
     name: "moodeng",
   },
 ];
