@@ -7,8 +7,7 @@
 }
 
 .image-wrapper {
-  position: absolute;
-  width: 100px;
+  width: 100%;
   height: auto;
   display: flex;
   align-items: center;
@@ -18,7 +17,6 @@
 }
 
 .image-wrapper img {
-  /* width: 150px; */
   height: auto !important;
   max-height: 175px;
   will-change: filter;
