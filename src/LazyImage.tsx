@@ -22,7 +22,7 @@ const LazyImage: React.FC<ImageProps> = ({lqip, src, alt }) => {
     };
 
     const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0.5, // Trigger when 10% of the image is visible
+      threshold: 0.35, 
     });
 
     if (currImageRef) {
