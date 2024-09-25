@@ -41,7 +41,6 @@ const LazyImage: React.FC<ImageProps> = ({lqip, src, alt }) => {
       ref={imageRef}
       src={isVisible ? src : lqip}
       alt={alt}
-      loading="lazy"
         style={{
           filter: isVisible ? "none" : "blur(10px)",
           transition: "filter 0.5s ease-in-out",
