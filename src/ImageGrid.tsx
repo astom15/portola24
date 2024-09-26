@@ -5,8 +5,8 @@ import React, {useRef} from "react";
 
 
 const generateRandomRotation = () => Math.random() * 70 - 35;
-const generatePeachesRotation = () => `${Math.random() * 10 - 12}deg`;
-const generateDaranyRotation = () => `${Math.random() * 12 + 8}deg`
+const generatePeachesRotation = () => Math.random() * 10 - 12;
+const generateDaranyRotation = () => Math.random() * 12 + 8;
 const adjustRotation = (baseRotation: number) => {
   let minRotation: number;
   let maxRotation: number;
@@ -26,6 +26,20 @@ const adjustRotation = (baseRotation: number) => {
 const generateRotationByRow = (lastRotation: number, index: number) => {
   return (index == 0) ? generateRandomRotation() : adjustRotation(lastRotation);
 }
+
+
+// for images that are too askew or cover up other images in a certain range.
+const switchRotation = (imgName: string, defaultRotation: number) => {
+  switch (imgName) {
+    case "peaches":
+      return generatePeachesRotation();
+    case "darany":
+      return generateDaranyRotation();
+    default:
+      return defaultRotation;
+  }
+};
+
 
 const handleImageClick = (imageName: string) => {
   const gtag = (window as any).gtag as (...args: any[]) => void;
@@ -78,9 +92,7 @@ const StickerGrid: React.FC = () => {
             <div
               className="image-wrapper"
               style={{
-                transform: img.name == "peaches" ? `rotate(${generatePeachesRotation()})`
-                  : img.name == "darany" ? `rotate(${generateDaranyRotation()})`
-                  : `rotate(${rotation}deg)`,
+                  transform: `rotate(${switchRotation(img.name, rotation)}deg)`
               }}
             >
               <LazyImage lqip={img.lqip} src={img.src} alt={img.alt} />

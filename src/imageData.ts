@@ -255,4 +255,20 @@ export const images = [
     href: "https://www.instagram.com/_amytp/",
     name: "amy",
   },
+  {
+    id: 33,
+    lqip: "/images/lqip/haley-lqip.jpg",
+    src: "/images/haley.png",
+    alt: "haley",
+    href: "https://www.instagram.com/haleydrexler/",
+    name: "haley",
+  },
+  {
+    id: 34,
+    lqip: "/images/lqip/pilar-lqip.jpg",
+    src: "/images/pilar.png",
+    alt: "pilar",
+    href: "https://www.instagram.com/dr.dmusic/",
+    name: "pilar",
+  },
 ];
