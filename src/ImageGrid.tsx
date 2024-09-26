@@ -92,7 +92,7 @@ const StickerGrid: React.FC = () => {
             <div
               className="image-wrapper"
               style={{
-                  transform: `rotate(${switchRotation(img.name, rotation)}deg)`
+                transform: `rotate(${switchRotation(img.name, rotation)}deg)`
               }}
             >
               <LazyImage lqip={img.lqip} src={img.src} alt={img.alt} />
