@@ -5,6 +5,8 @@ import React from "react";
 
 
 const generateRandomRotation = () => `${Math.random() * 70 - 35}deg`;
+const generatePeachesRotation = () => `${Math.random() * 10 - 12}deg`;
+const generateDaranyRotation = () => `${Math.random() * 12 + 8}deg`
 
 const handleImageClick = (imageName: string) => {
   const gtag = (window as any).gtag as (...args: any[]) => void;
@@ -47,13 +49,13 @@ const StickerGrid: React.FC = () => {
             >
               <div
                 className="image-wrapper"
-                style={{ transform: `rotate(${rotation})` }}
+                style={{
+                  transform: img.name == "peaches" ? `rotate(${generatePeachesRotation()})`
+                    : img.name == "darany" ? `rotate(${generateDaranyRotation()})`
+                    : `rotate(${rotation})`,
+                }}
               >
-                <LazyImage
-                  lqip={img.lqip}
-                  src={img.src}
-                  alt={img.alt}
-                />
+                <LazyImage lqip={img.lqip} src={img.src} alt={img.alt} />
               </div>
             </a>
           );
