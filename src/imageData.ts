@@ -247,4 +247,12 @@ export const images = [
     href: "https://www.instagram.com/khaokheow.zoo/",
     name: "moodeng",
   },
+  {
+    id: 32,
+    lqip: "/images/lqip/amy-lqip.jpg",
+    src: "/images/amy.png",
+    alt: "amy",
+    href: "https://www.instagram.com/_amytp/",
+    name: "amy",
+  },
 ];
