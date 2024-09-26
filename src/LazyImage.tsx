@@ -43,7 +43,7 @@ const LazyImage: React.FC<ImageProps> = ({lqip, src, alt }) => {
       alt={alt}
       style={{
         filter: isVisible ? "none" : "blur(10px)",
-        transition: "filter 0.4s ease-in-out",
+        transition: "filter 0.3s ease-in-out",
         display: "block",
         cursor: "pointer"
       }}
