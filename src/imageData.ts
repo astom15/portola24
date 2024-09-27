@@ -44,7 +44,7 @@ export const images = [
     lqip: "/images/lqip/tran-lqip.jpg",
     src: "/images/tran.png",
     alt: "tran",
-    href: "https://www.instagram.com/trantnguyen/",
+    href: "https://www.instagram.com/trantnguyen?igsh=MWQ1ZGUxMzBkMA==",
     name: "tran",
   },
   {
