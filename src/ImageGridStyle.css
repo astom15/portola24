@@ -25,7 +25,7 @@
 /* iPhone SE and smaller devices */
 @media (max-width: 390px) {
   .image-wrapper img {
-    width: 140px;
+    width: 145px;
     height: auto !important;
     max-height: 160px;
   }
